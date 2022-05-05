@@ -23,6 +23,7 @@ public class Billing {
         int essential=0;
         int luxury=0;
         int misc=0;
+        int errorcountfunc=0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Input File Path");
         String FileInput = sc.nextLine();
@@ -63,9 +64,12 @@ public class Billing {
                             break;
                         }
                         else{
-                            int stockCount=0;
-                            int errors= errorsFunc(stockCount,or.getProductName(),or.getProductQuantity());
-                            errorCount = errorCount+errors;
+                            if (errorcountfunc==0) {
+                                int stockCount = 0;
+                                int errors = errorsFunc(stockCount, or.getProductName(), or.getProductQuantity());
+                                errorCount = errorCount + errors;
+                                errorcountfunc=errorcountfunc+1;
+                            }
                         }
                     } else if (si.getProductCategory().equalsIgnoreCase("luxury") && si.getProductQuantity() >= or.getProductQuantity())
                     {
@@ -88,9 +92,12 @@ public class Billing {
                         }
                         else
                         {
-                            int stockCount=0;
-                            int errors= errorsFunc(stockCount,or.getProductName(),or.getProductQuantity());
-                            errorCount = errorCount+errors;
+                            if (errorcountfunc==0) {
+                                int stockCount = 0;
+                                int errors = errorsFunc(stockCount, or.getProductName(), or.getProductQuantity());
+                                errorCount = errorCount + errors;
+                                errorcountfunc=errorcountfunc+1;
+                            }
                         }
                     } else if (si.getProductCategory().equalsIgnoreCase("misc") && si.getProductQuantity() >= or.getProductQuantity())
                     {
@@ -112,9 +119,12 @@ public class Billing {
                             }
                             else
                             {
-                                int stockCount=0;
-                                int errors= errorsFunc(stockCount,or.getProductName(),or.getProductQuantity());
-                                errorCount = errorCount+errors;
+                                if (errorcountfunc==0) {
+                                    int stockCount = 0;
+                                    int errors = errorsFunc(stockCount, or.getProductName(), or.getProductQuantity());
+                                    errorCount = errorCount + errors;
+                                    errorcountfunc=errorcountfunc+1;
+                                }
                             }
                     } else {
                         int stockCount=1;
@@ -135,13 +145,11 @@ public class Billing {
         System.err.println(" Incorrect quantity.. writing to errorlog.txt");
         if (stockCount == 1)
         {
-            String log = "Below Item quantity is not present in stock\n";
-            log += "Item: " + productName + '(' + productQuantity + ')';
+            String log = "Items are not present in stock\n";
             errorLog(log);
         }
         else{
-            String log = "Below item exceeds the cap category value\n";
-            log += "Item: " + productName + '(' + productQuantity + ')';
+            String log = "Cap limit exceeds on the few of the item categories ,Please check the quantities added to the cart\n";
             errorLog(log);
         }
         errorinc+=1;
