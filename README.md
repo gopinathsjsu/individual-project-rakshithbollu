@@ -25,7 +25,7 @@ in the output file.
 * A Factory Pattern defines an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. 
 * Reading the input files i.e card details, inventory details and the user order details is handled using factory design pattern as all of these classes have same functionality a ScanFile interface is created and these 3 classes implements this interface.
 
-![] (https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/factory_design_pattern_class_diagram.png)
+![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/factory_design_pattern_class_diagram.png)
 
 ## Screenshots of Test Cases:
 
