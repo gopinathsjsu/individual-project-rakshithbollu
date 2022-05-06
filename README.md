@@ -29,17 +29,17 @@ in the output file.
 
 ## Screenshots of Test Cases:
 
-### Test Case 1:
+### Test Case 1(check if cart total is calculated):
 
 #### Input:
 
-![] (https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase1_input.png)
+![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase1_input.png)
 
 #### Output:
 
 ![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase1_output.png)
 
-### Test Case 2:
+### Test Case 2(If a new card is available check if it is added to card database)
 
 #### Input:
 
@@ -50,7 +50,7 @@ in the output file.
 ![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase2_output.png)
 
 
-### Test Case 3:
+### Test Case 3(check if the user needed quantity is actually available in stock)
 
 #### Input:
 
@@ -61,7 +61,7 @@ in the output file.
 ![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase3_output.png)
 
 
-### Test Case 4 (Item does not exist):
+### Test Case 4 (checking the cap limits for each category)
 
 #### Input:
 
