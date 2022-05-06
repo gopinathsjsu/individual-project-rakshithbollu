@@ -18,6 +18,56 @@ in the output file.
     2) Provide a global access point to that instance.
 * ItemCap is a Singleton class that has the cap limit details of each product category.
 * Everytime a object creation is executed for this class , the same single instance is returned.
-* 
+
 ![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/singleton_design_pattern_class_diagram.png)
+
+### Factory
+* A Factory Pattern defines an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. 
+* Reading the input files i.e card details, inventory details and the user order details is handled using factory design pattern as all of these classes have same functionality a ScanFile interface is created and these 3 classes implements this interface.
+
+![] (https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/factory_design_pattern_class_diagram.png)
+
+## Screenshots of Test Cases:
+
+### Test Case 1:
+
+#### Input:
+
+![] (https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase1_input.png)
+
+#### Output:
+
+![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase1_output.png)
+
+### Test Case 2:
+
+#### Input:
+
+![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase2_input.png)
+
+#### Output:
+
+![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase2_output.png)
+
+
+### Test Case 3:
+
+#### Input:
+
+![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase3_input.png)
+
+#### Output:
+
+![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase3_output.png)
+
+
+### Test Case 4 (Item does not exist):
+
+#### Input:
+
+![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase4_input.png)
+
+#### Output:
+
+![](https://github.com/gopinathsjsu/individual-project-rakshithbollu/blob/main/screenshots/testcase4_output.jpeg)
 
